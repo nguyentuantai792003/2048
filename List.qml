@@ -7,9 +7,10 @@ ListView{
     readonly property variant colorArray: ["silver","lightgray","lightpink","lightskyblue","lightseagreen","gold"]
 
     function arc_pow(arr){
+        var n = 20
         if(arr===0)
             return 0
-        for(var i=1;i<20;i++){
+        for(var i=1;i<n;i++){
             if((arr/Math.pow(2,i))===1)
             {
                 return i
